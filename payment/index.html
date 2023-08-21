@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Information Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header-img">
+        <img
+          width="100"
+          height="94"
+          src="http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/kaffa_logo_light_1x.png"
+          class="vc_single_image-img attachment-full"
+          alt=""
+        />
+      </div>
+      <div class="header-content">
+        <a href="../home/index.html" style="  color: white">Trang chủ</a>
+        <a href="../About/index.html" style="  color: white">Giới thiệu</a>
+        <a href="../product/index.html" style="  color: white">Sản phẩm</a>
+        <a href="../quytrinh/index.html" style="  color: white">Quy trình rang</a>
+        <a href="../cartlist/index.html" style="  color: white">Giỏ hàng</a>
+        <a href="../contact/index.html" style="  color: white">Liên hệ</a>
+      </div>
+    </div>
+    <div class="payment-container">
+      <h1>Thông tin thanh toán</h1>
+      <form id="payment-form">
+        <label for="fullName">Họ và tên:</label>
+        <input type="text" id="fullName" name="fullName" required />
+
+        <label for="tel">Tel:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="0900600660"
+          required
+        />
+
+        <label for="address">Adress:</label>
+        <input
+          type="text"
+          id="adress"
+          name="Adress"
+          placeholder="85 Trần Quang Diệu – Phường 8 – Quận 1 – TP Hồ Chí Minh"
+          required
+        />
+
+        <label>Phương thức thanh toán:</label>
+        <select name="paymentMethod" required>
+          <option value="">Chọn phương thức</option>
+          <option value="credit-card">Thẻ tín dụng / Thẻ ghi nợ</option>
+          <option value="paypal">PayPal</option>
+          <option value="bank-transfer">Chuyển khoản ngân hàng</option>
+          <option value="">Thanh toán khi nhận hàng</option>
+        </select>
+          <button type="submit">Thanh toán</button>
+        <div id="payment-status"></div>
+      </form>
+    </div>
+    <div class="footer">
+      <div class="footer-right">
+        <img src="http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/kaffa_logo_light_1x-1.png"
+          alt="" />
+        <p>
+          Bạn đang tìm kiếm loại cà phê ngon, nguyên chất, an toàn cho sức khỏe
+          thì <span style="color: green">Cafe Kaffa</span> là lựa chọn tốt nhất
+          dành cho bạn .
+        </p>
+        <div class="icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      <div class="footer-left">
+        <h1>Thông tin liên hệ</h1>
+        <p>
+          – Địa chỉ: 85 Trần Quang Diệu – Phường 8 – Quận 1 – TP Hồ Chí Minh
+        </p>
+        <p>– Hotline: <span>0909.090.909 – 0808.080.808</span></p>
+        <p>– Zalo: <span>0907.707.070</span></p>
+        <p>– Gmail: cafekaffa@gmail.com</p>
+      </div>
+    <script src="./app.js"></script>
+  </body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    .payment-container {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      background-color: #007bff;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 10px 20px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+    .header {
+  background-color: black;
+  height: 150px;
+  color: white;
+}
+.header-img {
+  display: flex;
+  justify-content: center;
+}
+.header .header-content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  margin-right: 0px;
+  align-items: center;
+  font-size: 20px;
+  padding-bottom: 40px !important;
+}
+
+a {
+  text-decoration: none;
+}
+.header-content :hover {
+  color: black;
+}
+.footer {
+  background-image: url(http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2021/12/footer-bg-1.jpg?id=495);
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.footer .footer-right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+.footer .footer-left {
+  padding: 50px 20px;
+}
+  </style>
+</html>

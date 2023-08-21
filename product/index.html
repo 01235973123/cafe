@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+      ul {
+        list-style: none;
+      }
+
+      .content-shop .product-name a {
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-height: 1.5em;
+        white-space: initial;
+        color: #333;
+        background-color: transparent;
+      }
+
+      a {
+        text-decoration: none;
+        outline: none !important;
+      }
+
+      .products .btn-add-cart {
+        float: none;
+        color: #f9f9f9;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px 0 10px;
+        font-size: 13px;
+        border-radius: 5px !important;
+        background-repeat: repeat-x;
+        background-size: 200%;
+        margin-bottom: 5px;
+      }
+
+      .single_add_to_cart_button,
+      .product_type_simple,
+      .products .btn-add-cart {
+        background-color: #59d600 !important;
+      }
+
+      .price-box span {
+        color: #dd0000;
+        font-weight: bold;
+      }
+
+      .product-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 6px;
+      }
+
+      .category-products {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .list-product {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 10px;
+        padding: 20px;
+        width: -webkit-fill-available;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+        <div class="header-img">
+          <img
+            width="100"
+            height="94"
+            src="http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/kaffa_logo_light_1x.png"
+            class="vc_single_image-img attachment-full"
+            alt=""
+          />
+        </div>
+        <div class="header-content">
+          <a href="../home/index.html">Trang chủ</a>
+          <a href="../About/index.html">Giới thiệu</a>
+          <a href="/product/index.html" style="  color: green" >Sản phẩm</a>
+          <a href="../quytrinh/index.html">Quy trình rang</a>
+          <a href="../cartlist/index.html">Giỏ hàng</a>
+          <a href="../contact/index.html">Liên hệ</a>
+        </div>
+      </div>
+    <div id="main-content" class="content-shop shop-width-4">
+      <div class="container">
+        <div class="row">
+          <div class="  ">
+            <div class="woocommerce-notices-wrapper"></div>
+            <h3 class="page-title">
+              <span>Sản phẩm</span>
+            </h3>
+            <div class="category-products">
+              <ul class="products product grid row list-product">
+                <li class="item-product">
+                  <div class="product-container">
+                    <div class="inner">
+                      <div class="product-left">
+                        <div class="product-thumb">
+                          <a class="product-img" href="#"
+                            ><img
+                              width="330"
+                              height="330"
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtHHrLJ8zMmMCIC7rElAa1H9DPVhVSs7-a8Q&usqp=CAU"
+                              class="images"
+                              alt=""
+                              "
+                              sizes="(max-width: 330px) 100vw, 330px"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="product-right">
+                        <div class="product-name">
+                          <a href="#" title="Cafe Hạt 100% Arabica Yirgacheffe Ethiopia" class="name"
+                            >Cafe Hạt 100% Arabica Yirgacheffe Ethiopia</a
+                          >
+                        </div>
+                        <div class="price-box">
+                          <p><span class="woocommerce-Price-amount amount">250.000</span>VND</p>
+                        </div>
+                        <div class="product-rating">
+                          <div class="inner-rating" style="width: 0%"></div>
+                        </div>
+                        <div class="product-button">
+                          <button href="#" rel="nofollow"
+													data-product_id="369" data-product_sku="" data-quantity="1"
+                          class="buy-button"
+                          >Mua
+													hàng<span class="icon"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-product">
+                  <div class="product-container">
+                    <div class="inner">
+                      <div class="product-left">
+                        <div class="product-thumb">
+                          <a class="product-img" href="#"
+                            ><img
+                              width="330"
+                              height="330"
+                              src="https://xuongbanghecafe.com/wp-content/uploads/2017/06/cafe-rang-xay-nguyen-chat-robusta-arabica-1.jpg"
+                              class="images"
+                              alt=""                 
+                              sizes="(max-width: 330px) 100vw, 330px"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="product-right">
+                        <div class="product-name">
+                          <a href="#" title="Cafe hạt rang xay Robusta Arabica"
+                            >Cafe hạt rang xay Robusta Arabica Retro</a
+                          >
+                        </div>
+                        <div class="price-box">
+                          <p><span class="woocommerce-Price-amount amount">300.000</span></p>
+                        </div>
+                        <div class="product-rating">
+                          <div class="inner-rating" style="width: 0%"></div>
+                        </div>
+                        <div class="product-button">
+                          <button href="#" rel="nofollow"
+													data-product_id="369" data-product_sku="" data-quantity="1"
+                          class="buy-button"
+                          >Mua
+													hàng<span class="icon"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-product">
+                  <div class="product-container">
+                    <div class="inner">
+                      <div class="product-left">
+                        <div class="product-thumb">
+                          <a class="product-img" href="#"
+                            ><img
+                              width="330"
+                              height="330"
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzQblaTSHjBzgpKrkd9AOvyTKQUUArX_VWEQ&usqp=CAU"
+                              class="images"
+                              alt=""
+                              sizes="(max-width: 330px) 100vw, 330px"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="product-right">
+                        <div class="product-name">
+                          <a href="#" title="Cafe hạt rang xay Robusta Arabica"
+                            >Cafe hạt rang xay Robusta Arabica</a
+                          >
+                        </div>
+                        <div class="price-box">
+                          <p><span class="woocommerce-Price-amount amount">350.000</span>VND</p>
+                          >
+                        </div>
+                        <div class="product-rating">
+                          <div class="inner-rating" style="width: 0%"></div>
+                        </div>
+                        <div class="product-button">
+                          <button href="#" rel="nofollow"
+													data-product_id="369" data-product_sku="" data-quantity="1"
+                          class="buy-button"
+                          >Mua
+													hàng<span class="icon"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-product">
+                  <div class="product-container">
+                    <div class="inner">
+                      <div class="product-left">
+                        <div class="product-thumb">
+                          <a class="product-img" href="#"
+                            ><img
+                              width="330"
+                              height="330"
+                              src="http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-02-480x682-330x330.jpg"
+                              class="images"
+                              alt=""
+                              srcset="
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-02-480x682-330x330.jpg 330w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-02-480x682-150x150.jpg 150w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-02-480x682-300x300.jpg 300w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-02-480x682-266x266.jpg 266w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-02-480x682-60x60.jpg    60w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-02-480x682-450x450.jpg 450w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-02-480x682-230x230.jpg 230w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-02-480x682-100x100.jpg 100w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-02-480x682-32x32.jpg    32w
+                              "
+                              sizes="(max-width: 330px) 100vw, 330px"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="product-right">
+                        <div class="product-name">
+                          <a href="#" title="Cafe Columbia Whole Bean"
+                            >Cafe Columbia Whole Bean</a
+                          >
+                        </div>
+                        <div class="price-box">
+                          <p><span class="woocommerce-Price-amount amount">200.000</span>VND</p>
+                          >
+                        </div>
+                        <div class="product-rating">
+                          <div class="inner-rating" style="width: 0%"></div>
+                        </div>
+                        <div class="product-button">
+                          <button href="#" rel="nofollow"
+													data-product_id="369" data-product_sku="" data-quantity="1"
+                          class="buy-button"
+                          >Mua
+													hàng<span class="icon"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-product">
+                  <div class="product-container">
+                    <div class="inner">
+                      <div class="product-left">
+                        <div class="product-thumb">
+                          <a class="product-img" href="#"
+                            ><img
+                              width="330"
+                              height="330"
+                              src="http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-04-480x682-330x330.jpg"
+                              class="images"
+                              alt=""
+                              srcset="
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-04-480x682-330x330.jpg 330w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-04-480x682-150x150.jpg 150w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-04-480x682-300x300.jpg 300w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-04-480x682-266x266.jpg 266w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-04-480x682-60x60.jpg    60w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-04-480x682-230x230.jpg 230w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-04-480x682-450x450.jpg 450w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-04-480x682-100x100.jpg 100w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-04-480x682-32x32.jpg    32w
+                              "
+                              sizes="(max-width: 330px) 100vw, 330px"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="product-right">
+                        <div class="product-name">
+                          <a href="#" title="Cafe Ethiopia Whole Bean"
+                            >Cafe Ethiopia Whole Bean</a
+                          >
+                        </div>
+                        <div class="price-box">
+                          <p><span class="woocommerce-Price-amount amount">250.000</span>VND</p>
+                        </div>
+                        <div class="product-rating">
+                          <div class="inner-rating" style="width: 0%"></div>
+                        </div>
+                        <div class="product-button">
+                          <button href="#" rel="nofollow"
+													data-product_id="369" data-product_sku="" data-quantity="1"
+                          class="buy-button"
+                          >Mua
+													hàng<span class="icon"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-product">
+                  <div class="product-container">
+                    <div class="inner">
+                      <div class="product-left">
+                        <div class="product-thumb">
+                          <a class="product-img" href="#"
+                            ><img
+                              width="330"
+                              height="330"
+                              src="http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-01-480x682-330x330.jpg"
+                              class="images"
+                              alt=""
+                              srcset="
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-01-480x682-330x330.jpg 330w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-01-480x682-150x150.jpg 150w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-01-480x682-300x300.jpg 300w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-01-480x682-266x266.jpg 266w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-01-480x682-60x60.jpg    60w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-01-480x682-230x230.jpg 230w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-01-480x682-450x450.jpg 450w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-01-480x682-100x100.jpg 100w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-01-480x682-32x32.jpg    32w
+                              "
+                              sizes="(max-width: 330px) 100vw, 330px"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="product-right">
+                        <div class="product-name">
+                          <a href="#" title="Cafe Nicaragua Whole Bean"
+                            >Cafe Nicaragua Whole Bean</a
+                          >
+                        </div>
+                        <div class="price-box">
+                          <p><span class="woocommerce-Price-amount amount">170.000</span>VND</p>
+                        </div>
+                        <div class="product-rating">
+                          <div class="inner-rating" style="width: 0%"></div>
+                        </div>
+                        <div class="product-button">
+                          <button href="#" rel="nofollow"
+													data-product_id="369" data-product_sku="" data-quantity="1"
+                          class="buy-button"
+                          >Mua
+													hàng<span class="icon"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-product">
+                  <div class="product-container">
+                    <div class="inner">
+                      <div class="product-left">
+                        <div class="product-thumb">
+                          <a class="product-img" href="#"
+                            ><img
+                              width="330"
+                              height="330"
+                              src="http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-06-480x682-330x330.jpg"
+                              class="images"
+                              alt=""
+                              srcset="
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-06-480x682-330x330.jpg 330w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-06-480x682-150x150.jpg 150w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-06-480x682-300x300.jpg 300w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-06-480x682-266x266.jpg 266w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-06-480x682-60x60.jpg    60w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-06-480x682-230x230.jpg 230w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-06-480x682-450x450.jpg 450w,
+                                http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/product-new-06-480x682-100x100.jpg 100w
+                              "
+                              sizes="(max-width: 330px) 100vw, 330px"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="product-right">
+                        <div class="product-name">
+                          <a href="#" title="Cafe Peru Whole Bean"
+                            >Cafe Peru Whole Bean</a
+                          >
+                        </div>
+                        <div class="price-box">
+                          <p><span class="woocommerce-Price-amount amount">180.000</span>VND</p>
+                        </div>
+                        <div class="product-rating">
+                          <div class="inner-rating" style="width: 0%"></div>
+                        </div>
+                        <div class="product-button">
+                          <button href="#" rel="nofollow"
+													data-product_id="369" data-product_sku="" data-quantity="1"
+                          class="buy-button"
+                          >Mua
+													hàng<span class="icon"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+        <div class="footer-right">
+          <img
+            src="http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2020/07/kaffa_logo_light_1x-1.png"
+            alt=""
+          />
+          <p>
+            Bạn đang tìm kiếm loại cà phê ngon, nguyên chất, an toàn cho sức khỏe
+            thì <span style="color: green">Cafe Kaffa</span> là lựa chọn tốt nhất
+            dành cho bạn .
+          </p>
+          <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+        <div class="footer-left">
+          <h1>Thông tin liên hệ</h1>
+          <p>
+            – Địa chỉ: 85 Trần Quang Diệu – Phường 8 – Quận 1 – TP Hồ Chí Minh
+          </p>
+          <p>– Hotline: <span>0909.090.909 – 0808.080.808</span></p>
+          <p>– Zalo: <span>0907.707.070</span></p>
+          <p>– Gmail: cafekaffa@gmail.com</p>
+        </div>
+        <script src="./app.js"></script>
+  </body>
+</html>

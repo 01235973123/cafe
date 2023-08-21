@@ -1,0 +1,96 @@
+*{
+    background: transparent;
+    border: 0 none;
+    font-weight: inherit;
+    margin: 0 auto;
+    padding: 0 ;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+  
+
+      font-family: 'Open Sans',sans-serif;  
+      -webkit-font-smoothing: antialiased;
+  }
+  
+    
+  .mainbody{
+    padding-left: 120px;
+    padding-right: 120px;
+    font-size: 16px;
+    line-height: 2;
+    color: black;
+  }
+  .bx bx-home{
+    max-width: 20px;
+    max-height: 20px;
+    display: block;
+    color: black;
+  }
+  .img{
+    max-width: 600px;
+    height: auto;
+  }
+  .nguoi{
+    line-height: 3
+  
+  }
+  .ulanh{
+    line-height: 3
+  }
+  .quytrinh{
+    font-size: 16px;
+    color: black;
+  }
+  
+  .ytb{
+    display:flex;
+    justify-content:center;
+    align-items:center
+  }
+
+  .header {
+    background-color: black;
+    height: 150px;
+    color: white;
+  }
+  .header-img {
+    display: flex;
+    justify-content: center;
+  }
+  .header .header-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin-right: 0px;
+    align-items: center;
+    font-size: 20px;
+    padding-bottom: 40px !important;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .header-content :hover{
+    color: green;
+}
+
+.footer {
+  background-image: url(http://thietkewebgioithieusanpham.thietkewebqcv.vn/wp-content/uploads/2021/12/footer-bg-1.jpg?id=495);
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.footer .footer-right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+ 
+}
+.footer .footer-left {
+  padding: 50px 20px;
+}
